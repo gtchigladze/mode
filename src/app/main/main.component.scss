@@ -8,10 +8,22 @@ html, body {
   padding: 0 15px;
 }
 
+.layout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.innerdiv {
+.nav{
+  display: flex;
+  height: 100%;
+  width: 200px;
+}
+
+.main {
     padding: 25px;
     height: 100%;
+    width: 100%;
     text-align: left;
     position: fixed;
     background: var(--primary);
