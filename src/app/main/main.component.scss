@@ -1,7 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
 .innerdiv {
     padding: 25px;
+    height: 100%;
     text-align: left;
-    position: relative;
+    position: fixed;
     background: var(--primary);
     color: var(--on-primary);
   }
