@@ -8,6 +8,7 @@ export const lightTheme: Theme = {
     '--primary': '#fff',
     '--on-primary': '#000',
     '--nav-border': '#ffad33',
-    '--header-border': '#999966'
+    '--header-border': '#999966',
+    '--sun':'#f2f2f2'
   }
 };
