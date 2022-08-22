@@ -3,9 +3,11 @@
   <div class="layout">
   <div class="nav">Nav Bar <br><br>Nav Bar <br><br>Nav Bar <br><br>Nav Bar <br><br></div>
     <div class="aside">
-    <div class="mode-icon" (click)="toggle()" >
+    <div class="mode-icon" >
+    <div (click)="toggle()">
     <span class="icon"  *ngIf="!show"><fa-icon [icon]="faSun"></fa-icon></span>
     <span class="icon"  *ngIf="show"><fa-icon [icon]="faMoon"></fa-icon></span>
+    </div>
     </div>
    
     <div class="cont">Content</div>
