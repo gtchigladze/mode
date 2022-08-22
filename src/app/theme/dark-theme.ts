@@ -7,5 +7,6 @@ export const darkTheme: Theme = {
     '--on-background': '#fff',
     '--primary': '#000',
     '--on-primary': '#fff',
+    '--nav-border': '#fff'
   },
 };

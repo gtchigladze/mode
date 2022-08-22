@@ -10,30 +10,39 @@ html, body {
  
 }
 
-.mode{
- display: flex;
-
-}
 .mode-icon{
-
-// background: #2196f3;
-display: flex;
-align-items: baseline;
-// justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+  border-bottom: 2px solid var(--nav-border);
+  transition: border-bottom 2s;
 }
 
 .layout{
   display: flex;
-  
+  flex-direction: row;
+}
+.aside{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.cont{
+  padding: 25px
 }
 
 .nav{
-  height: 100%;
+  padding: 25px;
+  height: 100vh;
   width: 200px;
+  border-right: 2px solid var(--nav-border);
+  transition: border-right 2s;
+
 }
 
+
 .main {
-    padding: 25px;
     height: 100%;
     width: 100%;
     text-align: left;
@@ -41,6 +50,7 @@ align-items: baseline;
     background: var(--primary);
     color: var(--on-primary);
     transition: background 3s;
+    
   }
 
   .switch {
