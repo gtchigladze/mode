@@ -2,8 +2,9 @@
 <div class="main" app-theme>
   <div class="layout">
   <div class="nav">Nav Bar</div>
-   
-  <div>
+   <div class="content">
+  <div class="mode">
+    <div class="mode-icon">
     <span class="icon"><fa-icon [icon]="faMoon"></fa-icon></span>
     <label class="switch">
       <input type="checkbox" (click)="toggle()" />
@@ -12,10 +13,17 @@
     <span class="icon"><fa-icon [icon]="faSun"></fa-icon></span>
     </div>
     </div>
+    article
+    </div>
+    
+    </div>
 
-    <div>
-      article
-     </div>
+    <div (click)="toggle()">
+      <div *ngIf="!show"><fa-icon [icon]="faSun"></fa-icon></div>
+     <div *ngIf="show"><fa-icon [icon]="faMoon"></fa-icon></div>
+    </div>
 
   </div>
   
+
+

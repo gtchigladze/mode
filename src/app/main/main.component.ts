@@ -10,20 +10,24 @@ import { ThemeService } from '../theme/theme.service';
 export class MainComponent implements OnInit {
   faSun = faSun;
   faMoon = faMoon;
-
+  show = false
+ 
   constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
+  
   }
 
   toggle() {
-    const active = this.themeService.getActiveTheme() ;
+    this.show = !this.show
+    const active = this.themeService.getActiveTheme();
     if (active.name === 'light') {
       this.themeService.setTheme('dark');
     } else {
       this.themeService.setTheme('light');
     }
   }
-  
+
+ 
 
 }

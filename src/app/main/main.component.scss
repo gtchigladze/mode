@@ -8,14 +8,24 @@ html, body {
   padding: 0 15px;
 }
 
+.mode{
+ display: flex;
+
+}
+.mode-icon{
+
+// background: #2196f3;
+display: flex;
+align-items: baseline;
+// justify-content: flex-end;
+}
+
 .layout{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
 }
 
 .nav{
-  display: flex;
   height: 100%;
   width: 200px;
 }
@@ -88,3 +98,6 @@ html, body {
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+
