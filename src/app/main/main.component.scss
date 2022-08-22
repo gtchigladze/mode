@@ -6,6 +6,8 @@ html, body {
 .icon{
   font-size: 22px;
   padding: 0 15px;
+  cursor: pointer;
+ 
 }
 
 .mode{
@@ -38,6 +40,7 @@ align-items: baseline;
     position: fixed;
     background: var(--primary);
     color: var(--on-primary);
+    transition: background 3s;
   }
 
   .switch {
