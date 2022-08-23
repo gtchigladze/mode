@@ -8,7 +8,7 @@ export const darkTheme: Theme = {
     '--primary': '#000',
     '--on-primary': '#fff',
     '--nav-border': ' #5c8a8a',
-    '--header-border': '#666699',
+    '--menu-color': '#ffff1a',
     '--sun':'#262626'
   },
 };
