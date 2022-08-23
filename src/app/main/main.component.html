@@ -3,8 +3,8 @@
   <div class="layout">
   <div class="nav">
     <ul >
-      <li ><a [class.active]="viewMode == 'tab1'"  (click)="viewMode ='tab1'">CHART</a></li>
-      <li><a [class.active]="viewMode == 'tab2'"  (click)="viewMode ='tab2'">CHART</a></li>
+      <li ><a [class.active]="viewMode == 'tab1'"  (click)="viewMode ='tab1'">CHART 1</a></li>
+      <li><a [class.active]="viewMode == 'tab2'"  (click)="viewMode ='tab2'">CHART 2</a></li>
     </ul>
     
   
@@ -21,8 +21,12 @@
    
     <div class="cont" [ngSwitch]="viewMode">
 
-      <div id="tab1" *ngSwitchCase="'tab1'">tab content 1  </div>
-      <div id="tab2" *ngSwitchCase="'tab2'">tab 2</div>
+      <div id="tab1" *ngSwitchCase="'tab1'">
+       <div echarts [options]="chartOption" class="demo-chart"></div>
+      </div>
+      <div id="tab2" *ngSwitchCase="'tab2'">
+       <div echarts [options]="option" class="demo-charts"></div>
+      </div>
 
     </div>
     </div>

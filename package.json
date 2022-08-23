@@ -26,7 +26,11 @@
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^5.2.0",
+    "chart.js": "^3.9.1",
     "font-awesome": "^4.7.0",
+    "igniteui-angular-charts": "^14.1.1",
+    "ng2-charts": "^4.0.0",
+    "ngx-echarts": "^14.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

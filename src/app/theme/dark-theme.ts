@@ -9,6 +9,7 @@ export const darkTheme: Theme = {
     '--on-primary': '#fff',
     '--nav-border': ' #5c8a8a',
     '--menu-color': '#ffff1a',
+    '--menu-col': '#706c43',
     '--sun':'#262626'
   },
 };

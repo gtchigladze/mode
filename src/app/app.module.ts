@@ -10,15 +10,20 @@ import { lightTheme } from './theme/light-theme';
 import { ThemeModule } from './theme/theme.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
+import { IgxItemLegendModule, IgxPieChartModule } from 'igniteui-angular-charts';
+import { CommonModule } from '@angular/common';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     ThemeModule.forRoot({
@@ -27,7 +32,12 @@ import {MatTabsModule} from '@angular/material/tabs';
     }),
     FontAwesomeModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    IgxItemLegendModule,
+    IgxPieChartModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'),
+    }),
     
   ],
   providers: [],
