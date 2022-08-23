@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { Observable, Observer } from 'rxjs';
 import { ThemeService } from '../theme/theme.service';
+
 
 @Component({
   selector: 'app-main',
@@ -11,6 +13,7 @@ export class MainComponent implements OnInit {
   faSun = faSun;
   faMoon = faMoon;
   show = false
+  viewMode = 'tab1';
  
   constructor(private themeService: ThemeService) { }
 

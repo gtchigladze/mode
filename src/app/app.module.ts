@@ -8,6 +8,8 @@ import { MainComponent } from './main/main.component';
 import { darkTheme } from './theme/dark-theme';
 import { lightTheme } from './theme/light-theme';
 import { ThemeModule } from './theme/theme.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ThemeModule } from './theme/theme.module';
       themes: [lightTheme, darkTheme],
       active: 'dark',
     }),
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatTabsModule
     
   ],
   providers: [],

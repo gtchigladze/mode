@@ -15,8 +15,6 @@
   display: flex;
   justify-content: flex-end;
   padding: 25px;
-  border-bottom: 2px solid var(--header-border);
-  transition: border-bottom 2s;
 }
 
 .layout{
@@ -40,8 +38,35 @@
   width: 200px;
   border-right: 2px solid var(--nav-border);
   transition: border-right 2s;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+}
+li a {
+  text-decoration: none;
+  color: #706c43;
+  font-size: 19px;
+  padding: 0 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: #dbd969;
+}
+
+li a.active{
+  color: rgb(7, 82, 25);
 }
 
 

@@ -1,10 +1,16 @@
 
 <div class="main" app-theme>
   <div class="layout">
-  <div class="nav">Nav Bar <br><br>Nav Bar <br><br>Nav Bar <br><br>Nav Bar <br><br>
+  <div class="nav">
+    <ul >
+      <li ><a [class.active]="viewMode == 'tab1'"  (click)="viewMode ='tab1'">CHART</a></li>
+      <li><a [class.active]="viewMode == 'tab2'"  (click)="viewMode ='tab2'">CHART</a></li>
+    </ul>
     
-    
+  
+
   </div>
+
     <div class="aside">
     <div class="mode-icon" >
     <div (click)="toggle()">
@@ -13,10 +19,16 @@
     </div>
     </div>
    
-    <div class="cont">Content</div>
+    <div class="cont" [ngSwitch]="viewMode">
+
+      <div id="tab1" *ngSwitchCase="'tab1'">tab content 1  </div>
+      <div id="tab2" *ngSwitchCase="'tab2'">tab 2</div>
+
+    </div>
     </div>
     </div>
 
+    
   </div>
 
 
