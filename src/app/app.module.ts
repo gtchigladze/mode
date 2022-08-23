@@ -9,8 +9,6 @@ import { darkTheme } from './theme/dark-theme';
 import { lightTheme } from './theme/light-theme';
 import { ThemeModule } from './theme/theme.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatTabsModule} from '@angular/material/tabs';
-import { IgxItemLegendModule, IgxPieChartModule } from 'igniteui-angular-charts';
 import { CommonModule } from '@angular/common';
 import { NgxEchartsModule } from 'ngx-echarts';
 
@@ -32,9 +30,6 @@ import { NgxEchartsModule } from 'ngx-echarts';
     }),
     FontAwesomeModule,
     BrowserAnimationsModule,
-    MatTabsModule,
-    IgxItemLegendModule,
-    IgxPieChartModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'),
     }),

@@ -1,6 +1,5 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy,  Component, OnInit, } from '@angular/core';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import { IgxItemLegendComponent, IgxPieChartComponent } from 'igniteui-angular-charts';
 import { ThemeService } from '../theme/theme.service';
 import { EChartsOption } from 'echarts';
 @Component({
@@ -17,7 +16,7 @@ export class MainComponent implements OnInit {
 
 
  
-  constructor(private themeService: ThemeService, private _detector: ChangeDetectorRef) { }
+  constructor(private themeService: ThemeService, ) { }
 
   ngOnInit(): void {
   
